@@ -1,0 +1,108 @@
+.pagina {
+  padding: 0;
+  background-image: url(../media/background.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .pagina p {
+    color: #fff;
+    font-size: larger;
+    font-weight: 500;
+    font-family: 'Poppins'; }
+  .pagina .barraNav {
+    background-color: rgba(255, 255, 255, 0.411); }
+    .pagina .barraNav .link {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.792);
+      font-style: italic;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      font-family: 'Oleo Script Swash Caps', cursive; }
+      .pagina .barraNav .link:hover {
+        font-weight: bolder;
+        color: #FFC20A;
+        text-shadow: #D7708B  2px 2px 2px; }
+    .pagina .barraNav .linkIndex {
+      font-size: 2rem; }
+  .pagina main {
+    padding-top: 4%;
+    padding-left: 20%;
+    padding-right: 20%; }
+    .pagina main .seccion0Index {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem; }
+    .pagina main .tituloPrincipalIndex {
+      display: inline;
+      font-weight: bolder;
+      color: #FFC20A;
+      text-shadow: #D7708B  2px 2px 2px;
+      font-family: 'Oleo Script Swash Caps', cursive;
+      font-style: italic;
+      font-size: 2.5rem; }
+    .pagina main .texto {
+      display: block;
+      color: #fff;
+      font-size: larger;
+      font-weight: 500;
+      font-family: 'Poppins'; }
+    .pagina main .tituloSecundario {
+      font-weight: bolder;
+      color: white;
+      text-shadow: #D7708B 2px 2px 2px;
+      font-family: 'Oleo Script Swash Caps', cursive;
+      font-style: italic;
+      font-size: 2rem;
+      margin: 1rem; }
+    .pagina main .seccion1Index {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      .pagina main .seccion1Index .imagenIndex {
+        border-radius: 50%;
+        width: 25%; }
+    .pagina main .seccion2Index {
+      margin-top: 4%; }
+    .pagina main .musicaUno {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .pagina main .musicaUno .imgDiscoUno {
+        width: 200px;
+        max-height: 200px; }
+  .pagina .contenedorPie .redesArtista {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 1rem;
+    top: 87vh; }
+  .pagina .contenedorPie .redesDev {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1rem;
+    top: 89vh; }
+  .pagina .contenedorPie .icono {
+    color: #fff;
+    font-size: 1.5rem; }
+    .pagina .contenedorPie .icono:hover {
+      text-decoration: none;
+      font-weight: bolder;
+      text-shadow: #D7708B  2px 2px 2px;
+      color: #FFC20A; }
+
+@media screen and (max-width: 1175px) {
+  main .seccion1Index {
+    flex-direction: column; }
+    main .seccion1Index .imagenIndex {
+      min-width: 200px; }
+  main .ocultar {
+    visibility: hidden;
+    position: fixed; }
+  .musicaUno {
+    flex-direction: column !important;
+    align-items: center; }
+    .musicaUno img {
+      margin: 10px; } }

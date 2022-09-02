@@ -1,0 +1,165 @@
+.pagina{
+    padding: 0;
+    background-image: url(../media/background.jpg);
+    //background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    p{
+        color: #fff;
+        font-size: larger;
+        font-weight: 500;
+        font-family: 'Poppins'; 
+    }
+    .barraNav{
+        background-color: rgba(255, 255, 255, 0.411);
+
+        .link{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.792);
+            font-style: italic;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            font-family:'Oleo Script Swash Caps', cursive;
+            
+            &:hover{
+                font-weight: bolder;
+                color: #FFC20A;
+                text-shadow: #D7708B  2px 2px 2px;
+            }
+        }
+
+        .linkIndex{
+            font-size: 2rem;
+        }
+    }
+
+    main{
+        padding-top: 4%;
+        padding-left: 20%;
+        padding-right: 20%;
+
+        .seccion0Index{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+
+        .tituloPrincipalIndex{
+            display: inline;
+            font-weight: bolder;
+            color: #FFC20A;
+            text-shadow: #D7708B  2px 2px 2px;
+            font-family:'Oleo Script Swash Caps', cursive;
+            font-style: italic;
+            font-size: 2.5rem;
+        }
+
+        .texto{
+            display: block;
+            color: #fff;
+            font-size: larger;
+            font-weight: 500;
+            font-family: 'Poppins';
+        }
+        .tituloSecundario{
+            font-weight: bolder;
+            color: white;
+            text-shadow: #D7708B 2px 2px 2px;
+            font-family: 'Oleo Script Swash Caps', cursive;
+            font-style: italic;
+            font-size: 2rem;
+            margin: 1rem;
+        }
+
+        .seccion1Index{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .imagenIndex{
+                border-radius: 50%;
+                width: 25%;
+
+            }
+        }
+
+        .seccion2Index{
+            margin-top: 4%;
+        }
+
+        .musicaUno{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .imgDiscoUno{
+                width: 200px;
+                max-height: 200px;
+            }
+
+        }
+
+    }
+
+
+    .contenedorPie{
+        .redesArtista{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 1rem;
+            top: 87vh;
+        }
+        .redesDev{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 1rem;
+            top: 89vh;
+        }
+
+        .icono{
+            color: #fff;
+            font-size: 1.5rem;
+            &:hover{
+                text-decoration: none;
+                font-weight: bolder;
+                text-shadow: #D7708B  2px 2px 2px;
+                color: #FFC20A;            
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1175px) {
+    
+    main{
+        .seccion1Index{
+            flex-direction: column;
+            .imagenIndex{
+                min-width: 200px;
+            }
+        }
+
+        .ocultar{
+            visibility: hidden;
+            position: fixed;
+        }
+        
+    }
+
+    .musicaUno{
+        flex-direction: column !important;
+        align-items: center;
+        img{
+            margin: 10px;
+        }
+    }
+}
